@@ -19,7 +19,7 @@ const Home = () => {
         <h2>Includes</h2>
         <ul>
           <li>Webpack 4</li>
-          <li>ESLint, Prettier</li>
+          <li>ESLint, Prettier, Stylelint</li>
           <li>Precommit hooks</li>
           <li>React Router</li>
           <li>Redux, Redux Thunk, Redux DevTools, Redux Logger</li>
