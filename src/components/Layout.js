@@ -24,7 +24,10 @@ const Layout = ({children}) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ])
 };
 
 export default Layout;
