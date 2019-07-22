@@ -1,8 +1,8 @@
+const env = require('../env');
 const webpack = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-require('dotenv').config();
 
 const paths = require('../paths');
 
@@ -21,6 +21,5 @@ module.exports = [
     filename: devMode ? '[name].css' : '[name].[hash].css',
     chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
   }),
-  // TODO:
-  new webpack.DefinePlugin({})
+  new webpack.DefinePlugin(env)
 ];
