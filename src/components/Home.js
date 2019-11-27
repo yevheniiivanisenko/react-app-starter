@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
-import {useDispatch} from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
-import {init} from '../store/app';
+import { init } from '../store/app';
 
 import Layout from './Layout';
 

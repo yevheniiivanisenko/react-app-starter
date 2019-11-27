@@ -1,16 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import ReactLogo from './ReactLogo';
 
 import './Layout.scss';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className="layout">
-      <header style={{display: 'flex', alignItems: 'center'}}>
-        <figure style={{margin: '0 10px 0 0'}}>
+      <header style={{ display: 'flex', alignItems: 'center' }}>
+        <figure style={{ margin: '0 10px 0 0' }}>
           <ReactLogo />
         </figure>
         <nav>
@@ -24,10 +24,7 @@ const Layout = ({children}) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ])
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)])
 };
 
 export default Layout;
