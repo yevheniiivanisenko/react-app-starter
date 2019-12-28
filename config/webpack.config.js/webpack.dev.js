@@ -7,8 +7,8 @@ const config = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: paths.build,
-    historyApiFallback: true
-  }
+    historyApiFallback: true,
+  },
 };
 
 module.exports = config;

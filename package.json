@@ -2,14 +2,13 @@
   "name": "react-app-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config=./config/webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config=./config/webpack.config.js",
     "lint": "eslint ./src",
-    "stylelint": "stylelint --fix ./src/**/*.scss",
-    "prettify": "prettier --write ./src/**/*.js"
+    "stylelint": "stylelint --fix './src/**/*.css'",
+    "prettify": "prettier --write './src/**/*.js'"
   },
   "author": "",
   "license": "ISC",
@@ -39,11 +38,9 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^1.19.1",
     "redux-logger": "^3.0.6",
-    "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
     "stylelint": "^10.1.0",
     "stylelint-config-rational-order": "^0.1.2",

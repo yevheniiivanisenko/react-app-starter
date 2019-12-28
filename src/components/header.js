@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const ReactLogo = () => (
   <svg
@@ -27,4 +28,16 @@ const ReactLogo = () => (
   </svg>
 );
 
-export default ReactLogo;
+const Header = () => (
+  <header style={{display: 'flex', alignItems: 'center'}}>
+    <figure style={{margin: '0 10px 0 0'}}>
+      <ReactLogo />
+    </figure>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/counter">Counter</Link>
+    </nav>
+  </header>
+);
+
+export default Header;

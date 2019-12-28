@@ -4,7 +4,7 @@ const baseConfig = require('./webpack.base');
 
 const config = {
   ...baseConfig,
-  mode: 'production'
+  mode: 'production',
 };
 
 config.output.filename = '[name].[contenthash:8].js';

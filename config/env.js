@@ -2,15 +2,15 @@ const fs = require('fs');
 const paths = require('./paths');
 
 const defaultVars = {
-  NODE_ENV: process.env.NODE_ENV || 'development'
+  NODE_ENV: process.env.NODE_ENV || 'development',
 };
 
 const stringifyEnv = function(obj) {
   return {
-    'process.env': Object.keys(obj).reduce((env, key) => {
+    'process.env': Object.keys(obj).reduce(function(env, key) {
       env[key] = JSON.stringify(obj[key]);
       return env;
-    }, {})
+    }, {}),
   };
 };
 
@@ -20,6 +20,5 @@ module.exports = function() {
     const env = {...dotenv.parsed, ...defaultVars};
     return stringifyEnv(env);
   }
-
   return stringifyEnv(defaultVars);
 };

@@ -5,15 +5,16 @@ const loaders = require('./loaders');
 
 module.exports = {
   entry: {
-    bundle: `${paths.src}/index.js`
+    bundle: `${paths.src}/index.js`,
   },
   output: {
+    publicPath: '/',
     filename: 'bundle.js',
     path: paths.build,
     chunkFilename: '[name].[chunkhash:8].chunk.js',
   },
   module: {
-    rules: loaders
+    rules: loaders,
   },
   plugins,
   optimization: {
@@ -22,9 +23,9 @@ module.exports = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  }
+          chunks: 'all',
+        },
+      },
+    },
+  },
 };

@@ -3,12 +3,14 @@
 ## Includes
 
 - Webpack 4
-- ESLint, Prettier
+- ESLint, Prettier, Stylelint
 - Precommit hooks
 - React Router
 - Redux, Redux Thunk, Redux DevTools, Redux Logger
 - PropTypes
 - .ENV
+
+> Stylelint has the minimal config setup except one added library ([stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order)) that sorts related property declarations
 
 ## Installation
 

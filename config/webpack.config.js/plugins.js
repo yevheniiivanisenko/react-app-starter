@@ -14,12 +14,12 @@ module.exports = [
     template: `${paths.public}/index.html`,
     minify: {
       collapseWhitespace: true,
-      removeEmptyAttributes: true
-    }
+      removeEmptyAttributes: true,
+    },
   }),
   new MiniCssExtractPlugin({
     filename: devMode ? '[name].css' : '[name].[hash].css',
-    chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+    chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
   }),
-  new webpack.DefinePlugin(env)
+  new webpack.DefinePlugin(env),
 ];

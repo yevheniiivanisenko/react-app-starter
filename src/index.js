@@ -5,15 +5,15 @@ import {Provider} from 'react-redux';
 
 import store from './store';
 import {history} from './history';
-import App from './App';
+import App from './app';
 
 import './index.css';
 
 render(
-    <Provider store={store}>
-      <Router history={history}>
-        <App />
-      </Router>
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root'),
 );

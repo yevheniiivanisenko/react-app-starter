@@ -6,38 +6,26 @@ module.exports = [
   {
     test: /\.m?js$/,
     exclude: /(node_modules|bower_components)/,
-    use: 'babel-loader'
+    use: 'babel-loader',
   },
   {
-    test: /\.(sc|c)ss$/,
-    use: [
-      devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-      'css-loader',
-      'sass-loader'
-    ]
+    test: /\.css$/i,
+    use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader'],
   },
   {
     test: /\.(png|svg|jpg|gif)$/,
-    use: [
-      'file-loader'
-    ]
+    use: ['file-loader'],
   },
   {
     test: /\.(woff|woff2|eot|ttf|otf)$/,
-    use: [
-      'file-loader'
-    ]
+    use: ['file-loader'],
   },
   {
     test: /\.(csv|tsv)$/,
-    use: [
-      'csv-loader'
-    ]
+    use: ['csv-loader'],
   },
   {
     test: /\.xml$/,
-    use: [
-      'xml-loader'
-    ]
-  }
+    use: ['xml-loader'],
+  },
 ];

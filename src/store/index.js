@@ -1,18 +1,17 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
-import { createLogger } from 'redux-logger';
+import {createLogger} from 'redux-logger';
 import rootReducer from './rootReducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const middleware = [];
-middleware.push(thunk);
+middleware.push(thunk.withExtraArgument({}));
 
-// TODO: Make it configurable(optional)
 if (process.env.NODE_ENV !== 'production') {
   middleware.push(
     createLogger({
-      collapsed: true
-    })
+      collapsed: true,
+    }),
   );
 }
 
