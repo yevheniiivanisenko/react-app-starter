@@ -4,7 +4,7 @@
     "eslint --fix --max-warnings=0",
     "git add"
   ],
-  "./src/**/*.scss": [
+  "./src/**/*.css": [
     "stylelint --fix",
     "git add"
   ]

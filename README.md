@@ -1,5 +1,7 @@
 # React App Starter
 
+The project is a simple template for a react based application. All the libraries used here have a minimal config. It does not have a CSS preprocessor. You configure the one you want.
+
 ## Includes
 
 - Webpack 4
