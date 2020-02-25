@@ -1,7 +1,7 @@
-const paths = require('../paths');
+const paths = require('../paths')
 
-const plugins = require('./plugins');
-const loaders = require('./loaders');
+const plugins = require('./plugins')
+const loaders = require('./loaders')
 
 module.exports = {
   entry: {
@@ -28,4 +28,4 @@ module.exports = {
       },
     },
   },
-};
+}

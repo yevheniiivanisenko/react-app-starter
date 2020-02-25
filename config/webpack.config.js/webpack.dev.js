@@ -1,5 +1,5 @@
-const paths = require('../paths');
-const baseConfig = require('./webpack.base');
+const paths = require('../paths')
+const baseConfig = require('./webpack.base')
 
 const config = {
   ...baseConfig,
@@ -9,6 +9,6 @@ const config = {
     contentBase: paths.build,
     historyApiFallback: true,
   },
-};
+}
 
-module.exports = config;
+module.exports = config

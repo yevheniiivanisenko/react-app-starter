@@ -1,6 +1,6 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const devMode = process.env.NODE_ENV !== 'production';
+const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = [
   {
@@ -28,4 +28,4 @@ module.exports = [
     test: /\.xml$/,
     use: ['xml-loader'],
   },
-];
+]

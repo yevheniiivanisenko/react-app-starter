@@ -1,13 +1,13 @@
-import React from 'react';
-import {render} from 'react-dom';
-import {Router} from 'react-router-dom';
-import {Provider} from 'react-redux';
+import React from 'react'
+import {render} from 'react-dom'
+import {Router} from 'react-router-dom'
+import {Provider} from 'react-redux'
 
-import store from './store';
-import {history} from './history';
-import App from './app';
+import store from './store'
+import {history} from './history'
+import App from './app'
 
-import './index.css';
+import './index.css'
 
 render(
   <Provider store={store}>
@@ -16,4 +16,4 @@ render(
     </Router>
   </Provider>,
   document.getElementById('root'),
-);
+)
